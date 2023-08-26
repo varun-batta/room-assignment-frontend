@@ -48,7 +48,7 @@ const Login = ({ setAuth }) => {
     const login = () => {
         if (tabValue === 0) {
             // Logging in
-            fetch('http://localhost:7060/api/login', {
+            fetch('http://varun.alwaysdata.net/api/login', {
                 method: 'POST',
                 body: JSON.stringify({
                     username,
@@ -71,7 +71,7 @@ const Login = ({ setAuth }) => {
             })
         } else {
             // Signing up
-            fetch('http://localhost:7060/api/signup', {
+            fetch('http://varun.alwaysdata.net/api/signup', {
                 method: 'POST',
                 body: JSON.stringify({
                     name,
